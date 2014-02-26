@@ -1,0 +1,7 @@
+/*.suo
+/packages/log4net.2.0.3/lib/net35-client
+
+VisualCanvas/bin/
+VisualCanvas/obj/
+packages/
+VisualCanvas/VisualCanvas.csproj.user

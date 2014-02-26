@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div ng-app="root">
+    <div ng-controller="homeController" id="home" ng-cloak>
+        <textarea ng-model="inputText">
+
+        </textarea>
+        <br />
+        <button class="btn btn-large" ng-click="submit()">Submit</button>
+
+        @*<button class="btn btn-large" ng-click="buttonPress()">Test Button</button>
+        </div>*@
+    </div>
+
+@section scripts {
+    <script src="~/Scripts/angularcontrollers/homeController.js"></script>
+    <script src='~/signalr/js'></script>
+}
