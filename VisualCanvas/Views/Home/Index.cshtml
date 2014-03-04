@@ -4,17 +4,17 @@
 
 <div ng-app="root">
     <div ng-controller="homeController" id="home" ng-cloak>
-        <textarea ng-model="inputText">
+        <textarea ng-model="inputText" style="width:500px;height:400px;font-family:'Courier New'">
 
         </textarea>
         <br />
         <button class="btn btn-large" ng-click="submit()">Submit</button>
-
-        @*<button class="btn btn-large" ng-click="buttonPress()">Test Button</button>
-        </div>*@
+        <br />
+        <div ng-bind-html="trustMe()"></div>
+        <div id="hidden" style="visibility:hidden;"></div>
     </div>
 
 @section scripts {
     <script src="~/Scripts/angularcontrollers/homeController.js"></script>
-    <script src='~/signalr/js'></script>
+    @*<script src='~/signalr/js'></script>*@
 }

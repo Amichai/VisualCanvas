@@ -1,21 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Reflection;
 using System.Web;
+using System.Xml.Linq;
 
 namespace VisualCanvas.Models.Library {
-    public class Element1 : IVisualNode {
-        public List<IVisualBase> Children {
-            get {
-                throw new NotImplementedException();
-            }
-            set {
-                throw new NotImplementedException();
-            }
-        }
+    public class Element1 : VisualBase, IVisualNode {
 
         public string ToHtml() {
-            return @"<div style=""color:red"">testing</div>";
+            return WebUtility.HtmlEncode(string.Format(@"<div style=""color:red;{0}"">testing</div>", this.Style));
         }
     }
 }

@@ -214,6 +214,9 @@
     <Compile Include="Hubs\Startup.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Library\Element1.cs" />
+    <Compile Include="Models\Library\StackPanel.cs" />
+    <Compile Include="Models\IVisualBase.cs" />
+    <Compile Include="Models\Library\TextBlock.cs" />
     <Compile Include="Models\VisualBase.cs" />
     <Compile Include="Models\VisualElement.cs" />
     <Compile Include="Models\VisualNode.cs" />
